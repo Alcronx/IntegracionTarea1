@@ -1,0 +1,579 @@
+STATUS | wrapper  | 2020/05/02 00:10:46 | ActiveMQ installed.
+ERROR  | wrapper  | 2020/05/02 00:11:55 | CreateService failed - El servicio especificado ya existe. (0x431)
+STATUS | wrapper  | 2020/05/02 01:33:48 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/02 01:33:48 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/02 01:33:49 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/02 01:33:49 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/02 01:33:49 | 
+INFO   | jvm 1    | 2020/05/02 01:33:49 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/02 01:33:49 |   Heap sizes: current=125952k  free=117963k  max=932352k
+INFO   | jvm 1    | 2020/05/02 01:33:49 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=0JyD58zqafQSYUmO -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=6268 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/02 01:33:49 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/02 01:33:49 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/02 01:33:49 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/02 01:33:49 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/02 01:33:49 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/02 01:33:49 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/02 01:33:50 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/02 01:33:50 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@74197356: startup date [Sat May 02 01:33:50 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | PListStore:[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49821-1588376031434-0:1) is starting
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/02 01:33:51 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/02 01:33:52 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@23baabd7{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/02 01:33:52 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 01:33:52 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/02 01:33:52 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49821-1588376031434-0:1) started
+INFO   | jvm 1    | 2020/05/02 01:33:52 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/02 01:33:52 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 80443 mb of usable space. - resetting to maximum available disk space: 80443 mb
+INFO   | jvm 1    | 2020/05/02 01:33:53 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/02 01:33:53 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2020/05/02 02:06:19 |  INFO | Waited 1.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:20 |  INFO | Waited 2.003 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:21 |  INFO | Waited 3.004 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:22 |  INFO | Waited 4.005 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:23 |  INFO | Waited 5.007 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:24 |  INFO | Waited 6.009 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:25 |  INFO | Waited 7.010 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:26 |  INFO | Waited 8.010 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:27 |  INFO | Waited 9.007 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:27 |  INFO | Waited 9.504 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.752 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.877 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.939 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.970 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.985 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.994 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.997 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 9.999 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Waited 10.000 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] due interrupted.
+INFO   | jvm 1    | 2020/05/02 02:06:28 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@61b63831[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: false took: 10.001 seconds.
+INFO   | jvm 1    | 2020/05/02 02:07:13 |  INFO | Connector vm://localhost started
+STATUS | wrapper  | 2020/05/02 02:10:39 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49821-1588376031434-0:1) is shutting down
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Connector vm://localhost stopped
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | PListStore:[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49821-1588376031434-0:1) uptime 36 minutes
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49821-1588376031434-0:1) is shutdown
+INFO   | jvm 1    | 2020/05/02 02:10:40 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@74197356: startup date [Sat May 02 01:33:50 CEST 2020]; root of context hierarchy
+STATUS | wrapper  | 2020/05/02 02:10:40 | <-- Wrapper Stopped
+STATUS | wrapper  | 2020/05/02 02:11:21 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/02 02:11:21 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/02 02:11:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/02 02:11:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/02 02:11:22 | 
+INFO   | jvm 1    | 2020/05/02 02:11:22 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/02 02:11:22 |   Heap sizes: current=125952k  free=117963k  max=932352k
+INFO   | jvm 1    | 2020/05/02 02:11:22 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=Vzq5YyWJcCWG2vH5 -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=8120 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/02 02:11:22 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/02 02:11:22 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/02 02:11:22 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/02 02:11:22 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/02 02:11:22 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/02 02:11:22 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/02 02:11:22 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/02 02:11:22 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@37f43016: startup date [Sat May 02 02:11:22 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Recovering from the journal @1:2408
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Recovery replayed 3 operations from the journal in 0.078 seconds.
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | PListStore:[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-50706-1588378283665-0:1) is starting
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/02 02:11:23 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/02 02:11:24 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/02 02:11:24 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@2eeae726{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/02 02:11:24 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:11:24 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/02 02:11:24 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-50706-1588378283665-0:1) started
+INFO   | jvm 1    | 2020/05/02 02:11:24 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/02 02:11:24 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 80409 mb of usable space. - resetting to maximum available disk space: 80409 mb
+INFO   | jvm 1    | 2020/05/02 02:11:25 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/02 02:11:25 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+STATUS | wrapper  | 2020/05/02 02:27:27 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/02 02:27:27 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/02 02:27:28 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/02 02:27:28 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/02 02:27:28 | 
+INFO   | jvm 1    | 2020/05/02 02:27:28 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/02 02:27:28 |   Heap sizes: current=125952k  free=117963k  max=932352k
+INFO   | jvm 1    | 2020/05/02 02:27:28 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=vKoBvWzwIC6nDs9c -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=6048 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/02 02:27:28 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/02 02:27:28 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/02 02:27:28 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/02 02:27:28 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/02 02:27:28 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/02 02:27:28 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/02 02:27:28 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/02 02:27:28 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@37f43016: startup date [Sat May 02 02:27:28 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/02 02:27:29 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/02 02:27:29 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2020/05/02 02:27:29 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 5
+INFO   | jvm 1    | 2020/05/02 02:27:29 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | PListStore:[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49795-1588379250063-0:1) is starting
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@24b6cea5{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49795-1588379250063-0:1) started
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/02 02:27:30 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 80054 mb of usable space. - resetting to maximum available disk space: 80054 mb
+INFO   | jvm 1    | 2020/05/02 02:27:31 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/02 02:27:31 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2020/05/02 02:28:15 |  INFO | Connector vm://localhost started
+INFO   | jvm 1    | 2020/05/02 02:45:12 |  INFO | Waited 2.768 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f67cb44[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:45:15 |  INFO | Waited 5.536 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f67cb44[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:45:18 |  INFO | Waited 8.305 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f67cb44[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:45:20 |  INFO | Waited 10.600 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f67cb44[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 02:45:20 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f67cb44[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/02 02:45:20 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f67cb44[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] due interrupted.
+INFO   | jvm 1    | 2020/05/02 02:45:20 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f67cb44[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] is shutdown: true and terminated: false took: 10.607 seconds.
+INFO   | jvm 1    | 2020/05/02 02:45:20 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:49899 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:49899
+INFO   | jvm 1    | 2020/05/02 03:33:55 |  INFO | Connector vm://localhost stopped
+STATUS | wrapper  | 2020/05/02 04:35:01 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/02 04:35:01 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/02 04:35:02 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/02 04:35:02 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/02 04:35:02 | 
+INFO   | jvm 1    | 2020/05/02 04:35:02 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/02 04:35:02 |   Heap sizes: current=125952k  free=117961k  max=932352k
+INFO   | jvm 1    | 2020/05/02 04:35:02 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=Hx0xXZL_HKoNO17m -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=8676 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/02 04:35:02 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/02 04:35:02 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/02 04:35:02 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/02 04:35:02 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/02 04:35:02 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/02 04:35:02 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/02 04:35:02 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/02 04:35:02 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@37f43016: startup date [Sat May 02 04:35:02 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 15
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | Recovering from the journal @1:3830
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | Recovery replayed 10 operations from the journal in 0.081 seconds.
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | PListStore:[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/02 04:35:03 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-55033-1588386903791-0:1) is starting
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@6c250d1b{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-55033-1588386903791-0:1) started
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/02 04:35:04 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 79496 mb of usable space. - resetting to maximum available disk space: 79496 mb
+INFO   | jvm 1    | 2020/05/02 04:35:05 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/02 04:35:05 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2020/05/02 05:11:38 |  INFO | Connector vm://localhost started
+INFO   | jvm 1    | 2020/05/02 05:12:00 |  WARN | /admin/deleteDestination.action
+INFO   | jvm 1    | 2020/05/02 05:12:00 | javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.server.Server.handle(Server.java:500)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:12:00 | 	at java.lang.Thread.run(Unknown Source)[:1.8.0_111]
+INFO   | jvm 1    | 2020/05/02 05:13:02 |  WARN | /admin/deleteDestination.action
+INFO   | jvm 1    | 2020/05/02 05:13:02 | javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.server.Server.handle(Server.java:500)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:13:02 | 	at java.lang.Thread.run(Unknown Source)[:1.8.0_111]
+INFO   | jvm 1    | 2020/05/02 05:41:38 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:58194 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:58194
+INFO   | jvm 1    | 2020/05/02 05:44:01 |  WARN | /admin/deleteDestination.action
+INFO   | jvm 1    | 2020/05/02 05:44:01 | javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.server.Server.handle(Server.java:500)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:01 | 	at java.lang.Thread.run(Unknown Source)[:1.8.0_111]
+INFO   | jvm 1    | 2020/05/02 05:44:06 |  WARN | /admin/deleteDestination.action
+INFO   | jvm 1    | 2020/05/02 05:44:06 | javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.server.Server.handle(Server.java:500)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)[jetty-all-9.4.27.v20200227-uber.jar:9.4.27.v20200227]
+INFO   | jvm 1    | 2020/05/02 05:44:06 | 	at java.lang.Thread.run(Unknown Source)[:1.8.0_111]
+INFO   | jvm 1    | 2020/05/02 05:47:14 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:58521 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:58521
+INFO   | jvm 1    | 2020/05/02 06:08:40 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:59749 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:59749
+INFO   | jvm 1    | 2020/05/02 06:13:26 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:60009 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:60009
+INFO   | jvm 1    | 2020/05/02 06:13:58 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:60037 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:60037
+INFO   | jvm 1    | 2020/05/02 06:13:58 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:60038 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:60038
+INFO   | jvm 1    | 2020/05/02 06:34:18 |  INFO | Waited 1.901 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:20 |  INFO | Waited 3.805 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:22 |  INFO | Waited 5.595 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:23 |  INFO | Waited 7.307 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:25 |  INFO | Waited 9.018 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  INFO | Waited 9.859 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  INFO | Waited 9.981 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  INFO | Waited 9.998 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  INFO | Waited 10.002 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] due interrupted.
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3f44a924[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] is shutdown: true and terminated: false took: 10.005 seconds.
+INFO   | jvm 1    | 2020/05/02 06:34:26 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:61133 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:61133
+INFO   | jvm 1    | 2020/05/02 06:39:30 |  INFO | Waited 2.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:39:32 |  INFO | Waited 4.002 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:39:34 |  INFO | Waited 6.003 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:39:36 |  INFO | Waited 8.006 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:39:38 |  INFO | Waited 10.000 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] to terminate...
+INFO   | jvm 1    | 2020/05/02 06:39:38 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/02 06:39:38 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] due interrupted.
+INFO   | jvm 1    | 2020/05/02 06:39:38 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@39762cc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2] is shutdown: true and terminated: false took: 10.003 seconds.
+INFO   | jvm 1    | 2020/05/02 06:39:38 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:61439 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:61439
+INFO   | jvm 1    | 2020/05/02 06:45:08 |  INFO | Connector vm://localhost stopped
+INFO   | jvm 1    | 2020/05/02 06:55:30 |  INFO | Connector vm://localhost started
+STATUS | wrapper  | 2020/05/03 03:47:43 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/03 03:47:44 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/03 03:47:44 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/03 03:47:44 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/03 03:47:44 | 
+INFO   | jvm 1    | 2020/05/03 03:47:44 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/03 03:47:44 |   Heap sizes: current=125952k  free=117963k  max=932352k
+INFO   | jvm 1    | 2020/05/03 03:47:44 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=lrBK5yFckba5gOX0 -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=7784 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/03 03:47:44 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/03 03:47:44 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/03 03:47:44 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/03 03:47:44 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/03 03:47:44 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/03 03:47:44 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/03 03:47:45 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/03 03:47:45 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@74197356: startup date [Sun May 03 03:47:45 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/03 03:47:46 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/03 03:47:46 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2020/05/03 03:47:46 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/03 03:47:46 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 165
+INFO   | jvm 1    | 2020/05/03 03:47:46 |  INFO | Recovering from the journal @1:5211
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Recovery replayed 88 operations from the journal in 0.165 seconds.
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | PListStore:[C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49964-1588470467058-0:1) is starting
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@5eacc1e{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49964-1588470467058-0:1) started
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/03 03:47:47 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\Integracion de Plataformas Prueba1\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 79466 mb of usable space. - resetting to maximum available disk space: 79466 mb
+INFO   | jvm 1    | 2020/05/03 03:47:48 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/03 03:47:48 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2020/05/03 03:59:27 |  INFO | Waited 2.002 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 03:59:29 |  INFO | Waited 4.004 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 03:59:31 |  INFO | Waited 6.005 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 03:59:33 |  INFO | Waited 8.006 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 03:59:35 |  INFO | Waited 10.003 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 03:59:35 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/03 03:59:35 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due interrupted.
+INFO   | jvm 1    | 2020/05/03 03:59:35 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f42f8d1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] is shutdown: true and terminated: false took: 10.003 seconds.
+INFO   | jvm 1    | 2020/05/03 03:59:35 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:50684 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:50684
+INFO   | jvm 1    | 2020/05/03 04:32:41 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:52411 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:52411
+INFO   | jvm 1    | 2020/05/03 04:35:06 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:52548 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:52548
+STATUS | wrapper  | 2020/05/03 19:29:43 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/03 19:29:44 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/03 19:29:44 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/03 19:29:44 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/03 19:29:44 | 
+INFO   | jvm 1    | 2020/05/03 19:29:44 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/03 19:29:44 |   Heap sizes: current=125952k  free=117964k  max=932352k
+INFO   | jvm 1    | 2020/05/03 19:29:44 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=sgklaU2mjYieF38O -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5568 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/03 19:29:44 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/03 19:29:44 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/03 19:29:44 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/03 19:29:44 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/03 19:29:44 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/03 19:29:44 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/03 19:29:44 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/03 19:29:44 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@37f43016: startup date [Sun May 03 19:29:44 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/03 19:29:45 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/03 19:29:45 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2020/05/03 19:29:45 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/03 19:29:45 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 150
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Recovering from the journal @1:13085
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Recovery replayed 19 operations from the journal in 0.089 seconds.
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | PListStore:[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49962-1588526986109-0:1) is starting
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@3a71f823{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-49962-1588526986109-0:1) started
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/03 19:29:46 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 78923 mb of usable space. - resetting to maximum available disk space: 78923 mb
+INFO   | jvm 1    | 2020/05/03 19:29:47 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/03 19:29:47 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+STATUS | wrapper  | 2020/05/03 19:49:46 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/03 19:49:46 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/03 19:49:47 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/03 19:49:47 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/03 19:49:47 | 
+INFO   | jvm 1    | 2020/05/03 19:49:47 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/03 19:49:47 |   Heap sizes: current=125952k  free=117962k  max=932352k
+INFO   | jvm 1    | 2020/05/03 19:49:47 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=c8thVMPFZDXBdPd8 -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=7544 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/03 19:49:47 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/03 19:49:47 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/03 19:49:47 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/03 19:49:47 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/03 19:49:47 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/03 19:49:47 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/03 19:49:47 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/03 19:49:47 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@74197356: startup date [Sun May 03 19:49:47 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 145
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | PListStore:[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-50237-1588528188432-0:1) is starting
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/03 19:49:48 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/03 19:49:49 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@2bef0880{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/03 19:49:49 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 19:49:49 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/03 19:49:49 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-50237-1588528188432-0:1) started
+INFO   | jvm 1    | 2020/05/03 19:49:49 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/03 19:49:49 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 78881 mb of usable space. - resetting to maximum available disk space: 78881 mb
+INFO   | jvm 1    | 2020/05/03 19:49:50 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/03 19:49:50 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2020/05/03 20:49:34 |  INFO | Waited 2.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:49:36 |  INFO | Waited 4.006 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:49:38 |  INFO | Waited 6.010 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:49:40 |  INFO | Waited 8.015 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:49:42 |  INFO | Waited 10.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:49:42 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/03 20:49:42 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due interrupted.
+INFO   | jvm 1    | 2020/05/03 20:49:42 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4bc83de7[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] is shutdown: true and terminated: false took: 10.007 seconds.
+INFO   | jvm 1    | 2020/05/03 20:49:42 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:53184 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:53184
+STATUS | wrapper  | 2020/05/03 20:50:21 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/03 20:50:22 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/03 20:50:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/03 20:50:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/03 20:50:22 | 
+INFO   | jvm 1    | 2020/05/03 20:50:22 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/03 20:50:22 |   Heap sizes: current=125952k  free=117955k  max=932352k
+INFO   | jvm 1    | 2020/05/03 20:50:22 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=YDCDBzU0mJnM3Ndw -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5680 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/03 20:50:22 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/03 20:50:22 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/03 20:50:22 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/03 20:50:22 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/03 20:50:22 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/03 20:50:22 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/03 20:50:22 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/03 20:50:22 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@2a0641e4: startup date [Sun May 03 20:50:22 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/03 20:50:23 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/03 20:50:23 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2020/05/03 20:50:23 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/03 20:50:23 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 125
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | PListStore:[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-53258-1588531824013-0:1) is starting
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@78cd2b52{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-53258-1588531824013-0:1) started
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/03 20:50:24 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 78857 mb of usable space. - resetting to maximum available disk space: 78857 mb
+INFO   | jvm 1    | 2020/05/03 20:50:25 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/03 20:50:25 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2020/05/03 20:56:14 |  INFO | Waited 2.002 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:56:16 |  INFO | Waited 4.015 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:56:18 |  INFO | Waited 6.022 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:56:20 |  INFO | Waited 8.026 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:56:22 |  INFO | Waited 10.002 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 20:56:22 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/03 20:56:22 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due interrupted.
+INFO   | jvm 1    | 2020/05/03 20:56:22 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@13113fc1[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] is shutdown: true and terminated: false took: 10.025 seconds.
+INFO   | jvm 1    | 2020/05/03 20:56:22 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:53552 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:53552
+INFO   | jvm 1    | 2020/05/03 21:10:02 |  INFO | Waited 2.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 21:10:04 |  INFO | Waited 4.006 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 21:10:06 |  INFO | Waited 6.015 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 21:10:08 |  INFO | Waited 8.018 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 21:10:10 |  INFO | Waited 10.002 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2020/05/03 21:10:10 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due first await termination elapsed.
+INFO   | jvm 1    | 2020/05/03 21:10:10 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due interrupted.
+INFO   | jvm 1    | 2020/05/03 21:10:10 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f274e54[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] is shutdown: true and terminated: false took: 10.022 seconds.
+INFO   | jvm 1    | 2020/05/03 21:10:10 |  WARN | Transport Connection to: ws://0:0:0:0:0:0:0:1:54278 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: ws://0:0:0:0:0:0:0:1:54278
+STATUS | wrapper  | 2020/05/03 21:10:26 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-53258-1588531824013-0:1) is shutting down
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | PListStore:[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-53258-1588531824013-0:1) uptime 20 minutes
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-53258-1588531824013-0:1) is shutdown
+INFO   | jvm 1    | 2020/05/03 21:10:27 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@2a0641e4: startup date [Sun May 03 20:50:22 CEST 2020]; root of context hierarchy
+STATUS | wrapper  | 2020/05/03 21:10:28 | <-- Wrapper Stopped
+STATUS | wrapper  | 2020/05/03 21:10:42 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/05/03 21:10:42 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/03 21:10:42 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/05/03 21:10:42 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/05/03 21:10:42 | 
+INFO   | jvm 1    | 2020/05/03 21:10:42 | Java Runtime: Oracle Corporation 1.8.0_111 C:\Program Files\Java\jre1.8.0_111
+INFO   | jvm 1    | 2020/05/03 21:10:42 |   Heap sizes: current=125952k  free=117955k  max=932352k
+INFO   | jvm 1    | 2020/05/03 21:10:42 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=rDMuCXVb2tJb7LXt -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=4404 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/05/03 21:10:42 | Extensions classpath:
+INFO   | jvm 1    | 2020/05/03 21:10:42 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/05/03 21:10:42 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/05/03 21:10:42 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/05/03 21:10:42 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/05/03 21:10:42 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/05/03 21:10:43 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/05/03 21:10:43 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@6631a4f5: startup date [Sun May 03 21:10:43 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Recovering from the journal @1:16361
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Recovery replayed 21 operations from the journal in 0.119 seconds.
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | PListStore:[C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-54348-1588533044476-0:1) is starting
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Listening for connections at: tcp://DESKTOP-4K7HNL3:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Listening for connections at: amqp://DESKTOP-4K7HNL3:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Listening for connections at: stomp://DESKTOP-4K7HNL3:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Listening for connections at: mqtt://DESKTOP-4K7HNL3:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/05/03 21:10:44 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/05/03 21:10:45 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@7cabc11b{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/05/03 21:10:45 |  INFO | Listening for connections at ws://DESKTOP-4K7HNL3:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/05/03 21:10:45 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/05/03 21:10:45 |  INFO | Apache ActiveMQ 5.15.12 (localhost, ID:DESKTOP-4K7HNL3-54348-1588533044476-0:1) started
+INFO   | jvm 1    | 2020/05/03 21:10:45 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/05/03 21:10:45 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Alex\Desktop\TareaIntegracion\apache-activemq-5.15.12\bin\win64\..\..\data\kahadb only has 78853 mb of usable space. - resetting to maximum available disk space: 78853 mb
+INFO   | jvm 1    | 2020/05/03 21:10:46 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/05/03 21:10:46 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
