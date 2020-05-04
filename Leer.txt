@@ -1,0 +1,13 @@
+Sofware Que funciona con activeMq envia y recibe un mensaje utilizando la bibloteca stomp
+
+Como utilizar:
+
+1-Primero ir a apache-activemq-5.15.12\bin\win64 y con la cmd ejecutar el comando "activemq.bat start"
+2-Abrir el archivo python y ejecutarlo
+3-Ingresar los datos en el index html
+
+
+
+De donde se sacaron las bibliotecas: 
+
+https://stomp.github.io/implementations.html de aqui se saco el archivo stopm de phyton y js
